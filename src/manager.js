@@ -49,6 +49,10 @@ export default class Manager {
     }, this);
   }
 
+  handleEvents (ev) {
+    this.input.domHandler(ev);
+  }
+
   /**
    * @private
    * set options
@@ -307,7 +311,7 @@ export default class Manager {
  */
 function toggleCssProps(manager, add) {
   let { element } = manager;
-  if (!element.style) {
+  if (!element || !element.style) {
     return;
   }
   let prop;

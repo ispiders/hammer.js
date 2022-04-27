@@ -42,9 +42,9 @@ export default class Input {
    * bind the events
    */
   init() {
-    this.evEl && addEventListeners(this.element, this.evEl, this.domHandler);
-    this.evTarget && addEventListeners(this.target, this.evTarget, this.domHandler);
-    this.evWin && addEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
+    // this.evEl && addEventListeners(this.element, this.evEl, this.domHandler);
+    // this.evTarget && addEventListeners(this.target, this.evTarget, this.domHandler);
+    // this.evWin && addEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
   }
 
   /**
@@ -52,8 +52,8 @@ export default class Input {
    * unbind the events
    */
   destroy() {
-    this.evEl && removeEventListeners(this.element, this.evEl, this.domHandler);
-    this.evTarget && removeEventListeners(this.target, this.evTarget, this.domHandler);
-    this.evWin && removeEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
+    // this.evEl && removeEventListeners(this.element, this.evEl, this.domHandler);
+    // this.evTarget && removeEventListeners(this.target, this.evTarget, this.domHandler);
+    // this.evWin && removeEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
   }
 }

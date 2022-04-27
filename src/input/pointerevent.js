@@ -31,10 +31,10 @@ let POINTER_ELEMENT_EVENTS = 'pointerdown';
 let POINTER_WINDOW_EVENTS = 'pointermove pointerup pointercancel';
 
 // IE10 has prefixed support, and case-sensitive
-if (window.MSPointerEvent && !window.PointerEvent) {
-  POINTER_ELEMENT_EVENTS = 'MSPointerDown';
-  POINTER_WINDOW_EVENTS = 'MSPointerMove MSPointerUp MSPointerCancel';
-}
+// if (window.MSPointerEvent && !window.PointerEvent) {
+//   POINTER_ELEMENT_EVENTS = 'MSPointerDown';
+//   POINTER_WINDOW_EVENTS = 'MSPointerMove MSPointerUp MSPointerCancel';
+// }
 
 /**
  * @private
